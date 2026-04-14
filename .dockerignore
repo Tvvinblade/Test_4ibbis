@@ -1,0 +1,13 @@
+# Docker
+*.pid
+*.egg-info/
+
+# Git
+.git/
+.gitignore
+
+# Data
+data/
+
+# Logs
+logs/

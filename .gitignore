@@ -1,0 +1,32 @@
+# Airflow
+*.pyc
+__pycache__/
+*.pid
+*.egg-info/
+*.egg
+
+# Python
+venv/
+env/
+ENV/
+
+# Data
+data/*.db
+data/*.sqlite
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.env
