@@ -1,6 +1,6 @@
 """
 DAG для ETL процесса JSONPlaceholder -> SQLite
-Использует контекстный менеджер 'with DAG' и logging
+
 """
 
 from datetime import datetime, timedelta
@@ -17,7 +17,7 @@ from etl_jsonplaceholder import run_etl
 # Настройка логирования
 logger = logging.getLogger(__name__)
 
-# Default arguments
+# Стандартные аргументы
 default_args = {
     'owner': 'data_engineer',
     'depends_on_past': False,
@@ -27,7 +27,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Определение DAG с использованием контекстного менеджера
+# Определение DAG
 with DAG(
     dag_id='jsonplaceholder_etl',
     default_args=default_args,

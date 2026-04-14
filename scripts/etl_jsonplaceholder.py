@@ -49,7 +49,7 @@ def fetch_data(endpoint: str) -> List[Dict[str, Any]]:
 
 def transform_data(data: List[Dict[str, Any]], endpoint: str) -> pd.DataFrame:
     """
-    Преобразует данные в DataFrame с помощью pandas
+    Преобразуем данные в DataFrame с помощью pandas
     
     Args:
         data: список записей
@@ -66,7 +66,7 @@ def transform_data(data: List[Dict[str, Any]], endpoint: str) -> pd.DataFrame:
 
 def save_to_sqlite(df: pd.DataFrame, table_name: str, db_path: str):
     """
-    Сохраняет DataFrame в SQLite без дублирования данных
+    Сохраняем DataFrame в SQLite без дубликатов
     
     Args:
         df: DataFrame для сохранения

@@ -1,7 +1,5 @@
 # JSONPlaceholder ETL Pipeline
 
-Тестовое задание для Data Engineer. ETL-процесс, который загружает данные из API JSONPlaceholder в SQLite с использованием Apache Airflow, pandas и Docker.
-
 ## 📋 Описание
 
 Проект реализует:
@@ -34,7 +32,6 @@ Test_4ibbis/
 
 - Docker Desktop
 - Docker Compose
-- Минимум 4GB RAM
 
 ### Запуск проекта
 
@@ -47,8 +44,6 @@ cd D:\AI\Test_4ibbis
 ```bash
 docker compose up -d
 ```
-
-Первый запуск может занять 5-10 минут (загрузка образов и установка зависимостей).
 
 3. **Откройте Airflow Web UI**
 ```
@@ -119,11 +114,3 @@ SQLite база находится в `data/jsonplaceholder.db`
 - В Airflow Web UI (Task Logs)
 - В директории `logs/`
 - В консоли при ручном запуске
-
-## 👤 Автор
-
-Тестовое задание - Data Engineer
-
-## 📄 Лицензия
-
-MIT
